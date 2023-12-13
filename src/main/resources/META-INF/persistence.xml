@@ -4,7 +4,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- entidades o entities -->
         
-        
+        <class>ejercicio4.entities.Contrato</class>
         
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
@@ -34,8 +34,8 @@
             <property name="hibernate.show_sql" value="true"/>
  			<property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
-    </persistence-unit>
-    
+    </persistence-unit> 
+   
     
     
     

@@ -1,6 +1,7 @@
 package ejercicio4.entities;
 
 import java.text.DateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -27,7 +28,7 @@ public class Contrato {
 	private Date fechaInicio;
 	@Temporal(TemporalType.DATE)
 	@Column(name = "FECHA_FIN", nullable = false)
-	private Date fechaFin;
+	private LocalDate fechaFin;
 	@Column(length = 20, nullable = false)
 	private int importe;
 
@@ -35,7 +36,7 @@ public class Contrato {
 		super();
 	}
 
-	public Contrato(int id, String nombreCliente, Date fechaInicio, Date fechaFin, int importe) {
+	public Contrato(int id, String nombreCliente, Date fechaInicio, LocalDate fechaFin, int importe) {
 		super();
 		this.id = id;
 		this.nombreCliente = nombreCliente;
@@ -68,11 +69,11 @@ public class Contrato {
 		this.fechaInicio = fechaInicio;
 	}
 
-	public Date getFechaFin() {
+	public LocalDate getFechaFin() {
 		return fechaFin;
 	}
 
-	public void setFechaFin(Date fechaFin) {
+	public void setFechaFin(LocalDate fechaFin) {
 		this.fechaFin = fechaFin;
 	}
 

@@ -1,0 +1,2 @@
+
+CREATE TABLE TB_PRODUCTOS(id int not null primary key, nom_producto VARCHAR(20)not null , tipo_producto enum('Alimentacion','Electronica','Ropa') not null,precio decimal not null, Stock int not null);
